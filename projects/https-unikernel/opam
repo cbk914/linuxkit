@@ -1,0 +1,16 @@
+opam-version: "1.2"
+name: "https-unikernel"
+version: "0.1"
+maintainer: "Thomas Leonard <thomas.leonard@docker.com>"
+authors: "Thomas Leonard <thomas.leonard@docker.com>"
+build: [
+  [make]
+]
+depends: [
+  "lwt"
+  "cohttp"
+  "astring"
+  "capnp"
+  "jbuilder" {build}
+  "ocamlfind" {build}
+]
